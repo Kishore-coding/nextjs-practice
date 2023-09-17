@@ -1,0 +1,61 @@
+@import "../../styles//variables.scss";
+
+.form-wrapper {
+    padding: 40px 0;
+
+    @media screen and (min-width:$screen-md) {
+        padding: 60px 0;
+    }
+
+    @media screen and (min-width:$screen-xl) {
+        padding: 80px 0;
+    }
+
+    .split-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+
+        @media screen and (min-width:$screen-xl) {
+            grid-template-columns: 1fr .7fr;
+            column-gap: 80px;
+        }
+
+        .form-section {
+            margin-top: 20px;
+
+            .mobile-field {
+                @media screen and (max-width:$screen-md) {
+                    flex: 1 0 100% !important;
+                }
+            }
+
+            button {
+                padding: 0.375rem 0.75rem
+            }
+        }
+
+        .contact-side-section {
+            @media screen and (min-width:$screen-xl) {
+                margin-top: 20px;
+            }
+
+            .contact-list {
+                .horizontal-line {
+                    border-bottom: 1px solid $color-white1;
+                    margin: 16px 0;
+                }
+
+                .list {
+                    h3 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

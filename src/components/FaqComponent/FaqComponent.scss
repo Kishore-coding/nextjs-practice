@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.faq-wrapper{
+    .faq-section{
+        .heading{
+
+        }
+        .faq-item{
+            .accordion{
+                .accordion-item{
+                    border: none;
+                    border-bottom: 1px solid $color-white1;
+                    .accordion-header{
+                        button{
+                            &:focus{
+                                box-shadow: none;
+                            }
+                            background-color: $color-white !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

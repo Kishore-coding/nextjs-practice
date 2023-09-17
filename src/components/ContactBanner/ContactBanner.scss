@@ -1,0 +1,30 @@
+@import "../../styles//variables.scss";
+
+.contact-page-wrapper{
+    .contact-banner{
+        background: $bg-gradient;
+        .contact-section{
+            padding-top: 120px;
+            padding-bottom: 90px;
+            @media screen and (min-width:$screen-xl){
+            padding-top: 170px;
+            padding-bottom: 60px;
+            }
+            h1{
+                color: $color-white;
+                font-size: 36px;
+                @media screen and (min-width:$screen-xl){
+                font-size: 48px;
+                }
+            }
+            p{
+                color: $color-white;
+                font-size: 20px;
+                @media screen and (min-width:$screen-xl){
+                    font-size: 24px;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

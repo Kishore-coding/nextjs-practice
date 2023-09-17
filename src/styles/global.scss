@@ -1,0 +1,143 @@
+@import "variables";
+@import "icons.scss";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+    color: $color-primary;
+    font-weight: 700;
+    line-height: 140%;
+    font-family: $font-primary;
+
+    @media screen and (min-width:$screen-md) {
+        font-size: 38px;
+    }
+
+    @media screen and (min-width:$screen-xl) {
+        font-size: 48px;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    color: $color-primary;
+    font-weight: 700;
+    line-height: 140%;
+    font-family: $font-primary;
+
+    @media screen and (min-width:$screen-md) {
+        font-size: 32px;
+    }
+
+    @media screen and (min-width:$screen-xl) {
+        font-size: 40px;
+    }
+}
+
+h3 {
+    font-size: 18px;
+    color: $color-primary;
+    font-weight: 700;
+    line-height: 100%;
+    font-family: $font-primary;
+
+    @media screen and (min-width:$screen-md) {
+        font-size: 24px;
+    }
+
+    @media screen and (min-width:$screen-xl) {
+        font-size: 32px;
+    }
+}
+
+p {
+    font-size: 16px;
+    color: $color-secondary;
+    line-height: 30px;
+    margin-bottom: 0px;
+    font-family: $font-primary;
+
+}
+
+a {
+    font-size: 16px;
+    color: $color-secondary;
+    line-height: 30px;
+    font-family: $font-primary;
+}
+
+button,
+.button {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-primary;
+    height: 48px;
+    padding: 0 24px;
+    border-radius: 48px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: $color-white;
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.button-gradient {
+    background: $btn-gradient !important;
+    border: none;
+}
+
+.button-outline {
+    border: 1px solid $color-white !important;
+    background-color: transparent;
+}
+
+.button-pink {
+    background: $btn-pink;
+    border: none;
+}
+
+.spacing-sections {
+    padding: 40px 0;
+
+    @media screen and (min-width:$screen-md) {
+        padding: 60px 0;
+    }
+
+    @media screen and (min-width:$screen-xl) {
+        padding: 80px 0;
+    }
+}

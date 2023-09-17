@@ -1,0 +1,16 @@
+.navbar-wrapper {
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0px;
+
+        // >*+* {
+        //     margin-left: 10px;
+        // }
+
+        li {
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@import "../styles/variables.scss";
+
+.banner-wrapper {
+    height: 100%;
+
+    .banner-section {
+        background: $bg-gradient;
+
+        .banner-two-sections {
+
+            .desktop-banner-img {
+                display: none;
+
+                @media screen and (min-width:$screen-xl) {
+                    display: block;
+                }
+            }
+
+            @media screen and (min-width:$screen-xl) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    border-radius: 20px;
+                }
+            }
+
+        }
+
+
+        .banner-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding-top: 130px;
+            padding-bottom: 90px;
+
+            @media screen and (min-width:$screen-md) {
+                padding-top: 180px;
+                padding-bottom: 140px;
+            }
+
+            @media screen and (min-width:$screen-xl) {
+                padding-top: 240px;
+                padding-bottom: 180px;
+            }
+
+            @media screen and (min-width:$screen-2xl) {
+                padding-top: 280px;
+                padding-bottom: 220px;
+            }
+
+
+            .title {
+                color: $color-white;
+                font-family: $font-primary;
+            }
+
+            p {
+                color: $color-white;
+
+                @media screen and (min-width:$screen-xl) {
+                    width: 50%;
+                }
+            }
+
+            .ctas {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 20px;
+
+                @media screen and (min-width:$screen-md) {
+                    flex-direction: row;
+                }
+
+                >*+* {
+                    margin-top: 20px;
+
+                    @media screen and (min-width:$screen-md) {
+                        margin-top: 0;
+                        margin-left: 20px;
+                    }
+                }
+
+                a {
+                    button {
+                        width: 100%;
+
+                        @media screen and (min-width:$screen-md) {
+                            width: 200px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

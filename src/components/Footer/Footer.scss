@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+
+
+.footer-wrapper {
+    background-color: $color-white;
+
+    .footer-module-sections {
+        padding: 40px 0;
+
+        .footer-top-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 24px;
+
+            @media screen and (min-width:$screen-md) {
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 16px;
+            }
+
+            .address-section {}
+
+            .page-link-section {
+                @media screen and (min-width:$screen-md) {
+                    text-align: center;
+                }
+
+                @media screen and (min-width:$screen-xl) {
+                    h3 {
+                        font-size: 24px;
+                    }
+                }
+
+                .link-items {
+                    a {
+                        display: block;
+                    }
+                }
+            }
+
+            .services-sections {
+                @media screen and (min-width:$screen-md) {
+                    text-align: center;
+                }
+
+                @media screen and (min-width:$screen-xl) {
+                    h3 {
+                        font-size: 24px;
+                    }
+                }
+
+                .services-list {
+                    a {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            border-top: 1px solid $color-white1;
+            padding-top: 24px;
+            margin-top: 24px;
+        }
+    }
+}
